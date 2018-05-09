@@ -22,6 +22,7 @@ test error: 14.15%
 training time:6048 seconds
 
 **KNN**
+
 While KNN itself is a Multi-classification algorithm, so we just adjust the data to the KNN and then we will get the result. 
 But the problem is that it is difficute to choose the suitable parameter K. So I run this algorithm several times, here is the result
 
@@ -54,3 +55,27 @@ test error: 24.3%
 training time:21459 seconds
 
 **CNN**
+
+I use tensorflow to implement CNN, and use GTX1070 to run the tensorflow code. So theoretically CNN will much faster than SVM and KNN.
+While actually is over 50 times faster than one-to-one SVM.It used about 10 second to train 100000 data. here is the detail:
+
+training data: 100 000
+
+test data: 20 000
+
+training error:23%
+
+test error: 24%
+
+training time:about 12 seconds
+
+
+training data: 1 600 000
+
+test data: 640 000
+
+training error:2%
+
+test error: 2.3%
+
+training time:about 350 seconds
